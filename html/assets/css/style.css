@@ -39,8 +39,16 @@ margin:auto;
 
 .wrap {width:900px; margin:50px auto;}
 body {font:15px/25px verdana, sans-serif; color:#333;}
-h1 {font-weight:bold; text-transform:uppercase; color:#349cf3; padding:40px 0 0;}
+h1 {font-weight:bold; text-transform:uppercase; color:#ECA5B2; padding:40px 0 0; text-shadow: 1px 1px 5px #552c23;}
 .text {width:600px; float:left;}
 .ad {padding:20px; border:1px solid #ddd; background:#f4f4f4;}
 .ad-2 {width:230px; float:right; border:1px solid #ddd; background:#f4f4f4; margin:10px 0 20px 0; padding:10px;}
 .ad-3 {float:left; width:336px; margin:25px 0 0 25px;}
+
+.navbar{
+	background-color: #552c23;
+}
+
+.navbar-brand{
+	color: #FDF5E6;
+}
