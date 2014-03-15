@@ -1,9 +1,11 @@
 Kinepro::Application.routes.draw do
-  get "login/index"
 
+  root :to => 'login#index'
+  #get 'login#index'
+  
+  post "authentication/auth"
+ 
   resources :groups
-
-
   resources :users
 
 

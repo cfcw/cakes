@@ -1,14 +1,15 @@
 <h1>Cakes for Co-workers</h1>
 
 
-    <%= form_tag({:controller => "user", :action => "show" }) do %>
+    <%= form_tag({:controller => "authentication", :action => "auth" }) do %>
 			<!-- error message -->
 			<% if flash[:msg] %>
 			<p><font color="red">※<%= flash[:msg]%></font></p>
 			<% end %>
 			<!-- /error message -->
 				<label for="textinput1"> メールアドレス </label><br/>
-				<%= text_field_tag(:login_id, nil, :placeholder => "メールアドレス") %>
+				<%= text_field_tag(:email, nil, :placeholder => "メールアドレス") %>
+				<br>
 				<label for="textinput2"> パスワード </label><br/>
 				<%= text_field_tag(:passwd, nil, :placeholder => "パスワード") %>
 		<div>
