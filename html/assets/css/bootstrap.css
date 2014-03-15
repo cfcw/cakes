@@ -10,6 +10,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
 }
 body {
   margin: 0;
@@ -63,6 +64,7 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  text-shadow: 1px 1px 3px black; 
 }
 mark {
   background: #ff0;
@@ -2375,8 +2377,8 @@ input[type="button"].btn-block {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.eot');
+  src: url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.woff') format('woff'), url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -5880,4 +5882,14 @@ legend {
 }
 .affix {
   position: fixed;
+}
+
+body{
+background-color: #FFFFFF;	
+color: #808080;
+}
+
+.navbar{
+	background-color: #552c23;
+	color: #FDF5E6;
 }
