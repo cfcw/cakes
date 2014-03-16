@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/bootstrap-social.css">
     <link rel="stylesheet" href="./assets/css/docs.css">
     <link rel="stylesheet" href="./assets/css/font-awesome.css">
+    <link rel="stylesheet" href="./assets/css/flexslider.css">
 	<script src="assets/jquery-1.7.1.min.js"></script>
     <script src="assets/js/jquery.easing.1.3.js"></script>
     <script src="assets/flowslider.jquery.js"></script>
@@ -36,8 +37,8 @@
        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
      })();
-
     </script>
+
   </head>
   <body>
     <script src="assets/js/bsa.js"></script>
@@ -45,11 +46,12 @@
      <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="../" class="navbar-brand">Cakes for Coworkers</a>
+          <a href="../" class="navbar-brand" style="font-family:Futura;">Cake's for Co-Workers</a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
+
           </button>
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
@@ -139,8 +141,7 @@
             <div class="row">
             <h2>おすすめ</h2>
                 <div class="bs-component" style="text-align:center;">
-                
-                <div class="thumbnails" >
+      
                 <div class="col-lg-3 col-md-2" >
 				<img src="asset/js/holder.js/200x125"> 
                 </div></div>
@@ -155,10 +156,7 @@
                <div class="thumbnails" >
                 <div class="col-lg-3 col-md-2" >
 				<img src="asset/js/holder.js/200x125"> 
-                </div></div>
-            
-            
-                </div>
+                </div></div>            
             </div>
             <hr>
             <div class="row">
@@ -202,39 +200,19 @@
            </div>
            <hr> 
 			</div>
-           <div>
-          </div>
         </div>
-                  
-  
- 
-        
        </div>
-      <div>
-      	
-      </div>
-      <footer>
-        <div class="row">
-          <div class="col-lg-10 col-xs-offset-2">
-
-            <ul class="list-unstyled">
-              <li class="pull-right"><a href="#top">Back to top</a></li>
-              <li><a href="http://news.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
-              <li><a href="http://feeds.feedburner.com/bootswatch">RSS</a></li>
-              <li><a href="https://twitter.com/thomashpark">Twitter</a></li>
-              <li><a href="https://github.com/thomaspark/bootswatch/">GitHub</a></li>
-              <li><a href="../help/#api">API</a></li>
-              <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=F22JEM3Q78JC2">Donate</a></li>
-            </ul>
-
-          </div>
-        </div>
-
-      </footer>
-
-
-    </div>
-
+     </div>
+    <script>
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 210,
+    itemMargin: 5
+  });
+});
+</script>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
