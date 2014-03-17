@@ -18,7 +18,10 @@ set :use_sudo, false
 set :rails_env, :production
 
 
-
+role :web, "www.cakes4co-workers.com"                          # Your HTTP server, Apache/etc
+role :app, "www.cakes4co-workers.com"                          # This may be the same as your `Web` server
+role :db,  "www.cakes4co-workers.com", :primary => true # This is where Rails migrations will run
+role :db,  "www.cakes4co-workers.com"
 
 
 # Default value for :format is :pretty
