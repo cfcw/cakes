@@ -16,13 +16,13 @@ class AuthenticationController < ApplicationController
       session[:is_login] = true
       session[:user_id] = user.id
       session[:login_name] = user.login_name
+      redirect_to mypage_main_path
     else      
       reset_session
-      flash[:msg] = "パスワードが不正です。"
+      flash[:msg] = "ログインが不正です。"
       redirect_to root_path
     end
     
-    redirect_to users_path
   end
 
   #

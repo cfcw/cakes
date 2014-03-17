@@ -20,7 +20,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
+  font-family:"メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 body {
   margin: 0;
@@ -107,7 +107,6 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
   font-size: 1em;
 }
 button,
@@ -274,7 +273,6 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #808080;
@@ -362,12 +360,11 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+.h6 {  font-weight: 300;
   line-height: 1.1;
   color: #333333;
-}
+  font-family:"メイリオ", Meiryo;
+  }
 h1 small,
 h2 small,
 h3 small,
@@ -691,7 +688,6 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 code {
   padding: 2px 4px;
@@ -2376,9 +2372,8 @@ input[type="button"].btn-block {
   transition: height 0.35s ease;
 }
 @font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.eot');
-  src: url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.woff') format('woff'), url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -5888,15 +5883,18 @@ body{
 background-color: #FFFFFF;	
 color: #808080;
 }
+
+
 #banner{
-	background-image:url(img/1618331_10203666209562298_1398986275_o.jpg);
+	background-image: url(../img/banner.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	padding: 80px 0 90px 0;
-	box-shadow:
-		inset 0 0 20px #fff /* 背景色と同じ色 */,
-		inset 0 0 20px #fff,
-		inset 0 0 50px #fff,
-		inset 0 0 100px #fff;
-}    	
+	width: 600px;
+	height:400px;
+	padding: 80px 0 80px 0;
+	margin-bottom:34px;}
+
+footer{
+	margin: 0px;
+}
 

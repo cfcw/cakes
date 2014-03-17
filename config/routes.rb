@@ -1,5 +1,19 @@
 Kinepro::Application.routes.draw do
 
+  resources :target_ages
+
+
+  resources :categories
+
+
+  resources :items
+
+
+  resources :shops
+
+
+  get "mypage/main"
+
   root :to => 'login#index'
   #get 'login#index'
   

@@ -35,8 +35,11 @@ gem "twitter-bootstrap-rails"
 # Use unicorn as the app server
 # gem 'unicorn'
 
+#group :development do
 # Deploy with Capistrano
-# gem 'capistrano'
+ gem 'capistrano', :require => nil
+ gem 'capistrano-ext', :require => nil
+#end 
 
 # To use debugger
 # gem 'debugger'

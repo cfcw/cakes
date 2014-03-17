@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Cakes Co-Workers</title>
+    <title>Cakes for Co-Workers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-	<%= stylesheet_link_tag    "application", :media => "all" %>
-  	<%= javascript_include_tag "application" %>
-  	<%= csrf_meta_tags %>    
-  	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="./bower_components/html5shiv/dist/html5shiv.js"></script>
       <script src="./bower_components/respond/dest/respond.min.js"></script>
     <![endif]-->
-    <script>
+    
+    <link rel="stylesheet" href="/assets/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="/assets/bootswatch.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/bootstrap-social.css">
+    <link rel="stylesheet" href="/assets/docs.css">
+    <link rel="stylesheet" href="/assets/font-awesome.css">
 
+  	<%= csrf_meta_tags %>    
+
+    <script>
      var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-23019901-1']);
       _gaq.push(['_setDomainName', "bootswatch.com"]);
@@ -28,11 +35,11 @@
      })();
 
     </script>
-
   </head>
   <body>
-
-          <%= yield %>
-          
-</body>
+  	
+<%= yield %>
+ 
+<%= javascript_include_tag "application" %>    
+  </body>
 </html>
