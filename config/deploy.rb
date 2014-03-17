@@ -1,7 +1,7 @@
 # config valid only for Capistrano 3.1
 lock '3.1.0'
 
-set :user, "app"
+set :user, 'app'
 set :application, 'cakes4co-workers'
 set :repo_url, 'https://github.com/cfcw/cakes.git'
 
