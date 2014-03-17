@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  target_age_range: 0〜12
+
+two:
+  target_age_range: 13〜20
+
+three:
+  target_age_range: 20〜30
+
+four:
+  target_age_range: 30〜40
+
+five:
+  target_age_range: 40〜
+  

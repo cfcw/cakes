@@ -1,0 +1,23 @@
+<h1>Listing target_ages</h1>
+
+<table>
+  <tr>
+    <th>Target age range</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @target_ages.each do |target_age| %>
+  <tr>
+    <td><%= target_age.target_age_range %></td>
+    <td><%= link_to 'Show', target_age %></td>
+    <td><%= link_to 'Edit', edit_target_age_path(target_age) %></td>
+    <td><%= link_to 'Destroy', target_age, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Target age', new_target_age_path %>
