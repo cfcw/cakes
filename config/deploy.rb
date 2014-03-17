@@ -8,10 +8,18 @@ set :repo_url, 'https://github.com/cfcw/cakes.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/var/www/html/cakes4co-workers'
+set :deploy_to, '/app/cakes4cw'
 
 # Default value for :scm is :git
 # set :scm, :git
+
+set :runner, 'app'
+set :use_sudo, false
+set :rails_env, :production
+
+
+
+
 
 # Default value for :format is :pretty
 # set :format, :pretty
