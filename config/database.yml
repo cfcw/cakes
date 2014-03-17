@@ -12,10 +12,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: kinepro_db
+  database: xxxx_db
   pool: 5
-  username: kinepro
-  password: kinepro
+  username: xxxx
+  password: xxxx
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -25,18 +25,18 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: kinepro_db
+  database: xxxx_db
   pool: 5
-  username: kinepro
-  password: kinepro
+  username: xxxx
+  password: xxxx
   socket: /tmp/mysql.sock
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: kinepro_db
+  database: xxxx_db
   pool: 5
-  username: kinepro
-  password: kinepro
+  username: xxxx
+  password: xxxx
   socket: /tmp/mysql.sock
