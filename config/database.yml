@@ -35,8 +35,8 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: kinepro_db
+  database: c4cw_db
   pool: 5
-  username: kinepro
-  password: kinepro
+  username: c4cw
+  password: c4cw
   socket: /tmp/mysql.sock

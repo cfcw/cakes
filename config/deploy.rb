@@ -9,7 +9,7 @@ set :repo_url, 'https://github.com/cfcw/cakes.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/app/cakes4cw'
+set :deploy_to, '/app/c4cw'
 
 # Default value for :scm is :git
 # set :scm, :git

@@ -39,7 +39,7 @@ gem "twitter-bootstrap-rails"
 # Deploy with Capistrano
  gem 'capistrano', :require => nil
  gem 'capistrano-ext', :require => nil
- gem "net-ssh", "~> 2.7.0"
+ gem "net-ssh"
 #end 
 
 # To use debugger
