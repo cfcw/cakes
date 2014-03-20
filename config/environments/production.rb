@@ -61,7 +61,7 @@ Kinepro::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
   
-  config.relative_url_root = "/c4cw"
+  #config.relative_url_root = "/c4cw"
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
