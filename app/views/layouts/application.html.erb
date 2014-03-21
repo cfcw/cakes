@@ -5,22 +5,21 @@
     <title>Cakes for Co-Workers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-
+    <!--StyleSheet-->
+	<%= stylesheet_link_tag "bootstrap" %>    
+	<%= stylesheet_link_tag "bootswatch.min" %>    
+	<%= stylesheet_link_tag "style" %>    
+	<%= stylesheet_link_tag "bootstrap-social" %>    
+	<%= stylesheet_link_tag "docs" %>    
+	<%= stylesheet_link_tag "font-awesome" %>    
+ 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="./bower_components/html5shiv/dist/html5shiv.js"></script>
       <script src="./bower_components/respond/dest/respond.min.js"></script>
     <![endif]-->
-    
-    <link rel="stylesheet" href="/assets/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="/assets/bootswatch.min.css">
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="stylesheet" href="/assets/bootstrap-social.css">
-    <link rel="stylesheet" href="/assets/docs.css">
-    <link rel="stylesheet" href="/assets/font-awesome.css">
 
-  	<%= csrf_meta_tags %>    
-
+    <!--JavaScript-->
     <script>
      var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-23019901-1']);
@@ -33,13 +32,13 @@
        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
      })();
-
     </script>
+  	<%= csrf_meta_tags %>    
   </head>
   <body>
-  	
+<!--Contents -->
 <%= yield %>
+<!--//Contents -->
  
-<%= javascript_include_tag "application" %>    
   </body>
 </html>
