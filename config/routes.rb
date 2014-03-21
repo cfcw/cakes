@@ -1,4 +1,4 @@
-Kinepro::Application.routes.draw do
+Cakes4CoWorkers::Application.routes.draw do
 
   resources :target_ages
 
