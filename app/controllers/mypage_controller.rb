@@ -8,7 +8,7 @@ class MypageController < ApplicationController
     #お勧め商品取得
     sql = "select item_name item_name 
              from items I "
-    @recomennded_items = Item.find_by_sql(sql)
+    @recommended_items = Item.find_by_sql(sql)
     
     #ランキング商品取得
     @ranking_items  = Item.find_by_sql(sql)

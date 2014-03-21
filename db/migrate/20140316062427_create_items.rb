@@ -11,6 +11,9 @@ class CreateItems < ActiveRecord::Migration
       t.integer :price
       t.text :memo1 
       t.text :memo2 
+      t.integer :recommended_flg
+      t.integer :rank
+      t.integer :near_by_flg
 
       t.timestamps
     end
