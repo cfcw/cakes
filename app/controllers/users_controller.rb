@@ -1,3 +1,7 @@
+#coding: utf-8
+# UsersController
+# Author:: Hiroyuki, Tajima
+# Date:: 2014.03.20
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json

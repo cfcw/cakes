@@ -1,3 +1,7 @@
+#coding: utf-8
+# CategoriesController
+# Author:: Hiroyuki, Tajima
+# Date:: 2014.03.20
 class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.json

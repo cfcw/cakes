@@ -2,7 +2,6 @@
 # AuthenticationController
 # Author:: Hiroyuki, Tajima
 # Date:: 2014.03.15
-
 class AuthenticationController < ApplicationController
 
   #
