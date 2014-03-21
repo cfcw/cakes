@@ -23,8 +23,8 @@ Cakes4CoWorkers::Application.configure do
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
   
-  #tajima@whoocus.com
-  config.assets.manifest = "/c4cw"
+  # 2014/03/21 tajima@whoocus.com
+  #config.assets.manifest = "/c4cw"
   
 
   # Specifies the header that your server uses for sending files
