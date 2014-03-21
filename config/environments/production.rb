@@ -24,7 +24,7 @@ Cakes4CoWorkers::Application.configure do
   # config.assets.manifest = YOUR_PATH
   
   # 2014/03/21 tajima@whoocus.com
-  config.assets.manifest = "/c4cw"
+  #config.assets.manifest = "/c4cw"
   
 
   # Specifies the header that your server uses for sending files
