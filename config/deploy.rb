@@ -2,7 +2,7 @@
 lock '3.1.0'
 
 set :user, 'app'
-set :application, 'cakes4co-workers'
+set :application, 'Cakes4CoWorkers'
 set :repo_url, 'https://github.com/cfcw/cakes.git'
 
 # Default branch is :master
