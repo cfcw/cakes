@@ -9,27 +9,27 @@ one:
 two:
   shop_id: 1
   item_id: 1
-  user_id: 1
-  reputation: いいね2
+  user_id: 2
+  reputation: 辛いです。
   rank: 5
 
 three:
   shop_id: 1
   item_id: 1
-  user_id: 1
-  reputation: いいね3
+  user_id: 3
+  reputation: これおいしいです。
   rank: 5
 
 four:
   shop_id: 1
-  item_id: 1
-  user_id: 1
+  item_id: 2
+  user_id: 4
   reputation: いいね4
   rank: 5
 
 five:
   shop_id: 1
-  item_id: 1
-  user_id: 1
-  reputation: いいね5
+  item_id: 2
+  user_id: 8
+  reputation: お腹がもたれます。
   rank: 5

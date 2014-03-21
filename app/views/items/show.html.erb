@@ -1,10 +1,107 @@
-<p id="notice"><%= notice %></p>
+<!-- ヘッダー -->
+<%= render "header"%>
+<!-- /ヘッダー -->
 
-<p>
-  <b>Item name:</b>
-  <%= @item.item_name %>
-</p>
+<!-- コンテンツ -->
+    <div class="container">
+	<div class="row">
+		<div class="item-container col-md-10  col-md-offset-1">
+			<div class="item-info col-md-6">
+				<h2 style="font-size:20px; text-align: left;"><%= @item.item_name %></h3>
+				<%= image_tag @item.image_url %>
+			</div>
+			<div class="col-md-6">
+				<h3 style="font-size:14pt; text-align:left;"><%= @item.comment1 %></h2>
+				<p><%= @item.comment2 %></p>
+				<p>サイズ: 直径15cm</p>
+				<p>価格:<%= @item.price %></p>
+				<form>
+				<div><a href="javascript:void(document.form1.submit())" >
+				<button class="btn btn-primary cart-btn"><i class="icon-shopping-cart icon-white"></i> カートに入れる</button></a>
+			　 数量　<input type="text" size="2" value="1" >
+				</div>
+				</form>
+				
+				<div><a href="javascript:void(document.form1.submit())" >
+                <button class="btn btn-primary cart-btn"><i class="icon-shopping-cart icon-white"></i> お気に入り登録</button></a>	</div>
+				<div><a href="http://line.me/R/msg/text/?LINE%E3%81%A7%E9%80%81%E3%82%8B%0D%0Ahttp%3A%2F%2Fline.me%2F"><img src="assets/img/linebutton_88x20.png" width="100" height="20" alt="LINEで送る" /></a>
+				</div>
+			</div>
+		</div>
+		</div> 
+		<div class="col-md-10">
+			<ul class="nav nav-tabs">
+	  <li class="active"><a href="#home" data-toggle="tab">基本情報</a></li>
+	  <li><a href="#profile" data-toggle="tab">口コミ</a></li>
+	  <li><a href="#messages" data-toggle="tab">地図</a></li>
+	</ul>
+	<div class="tab-content">
+	  <div class="tab-pane active" id="home">
+	  	<p>〒<%= @item.shop.zip_cd %><br>
+	  	<%= @item.shop.address %></p>
+	  	<p>Tel:<%= @item.shop.phone %></p>
+	  	<p>店舗情報：<%= @item.shop.shop_info %></p>
+	  	<p>営業時間：<%= @item.shop.start_time %>～<%= @item.shop.end_time %>（<%= @item.shop.time_info %>）</p>
+	  	<p>定休日：<%= @item.memo1 %></p>
+	  	<p>オプション種別:<%= @item.shop.memo2 %></p>
+	  	<p>注意事項</p>
+	  	<p>備考</p>
+	  </div>
+	  <div class="tab-pane" id="profile">
+		  <form>
+		  		<label>クチコミする</label>  
+			  <table>
+			  	<tr>
+			  		<td>
+				  	<% (1..5).each do |cnt| %>
+				  		<% if cnt == @item.rank %>
+				  		 <input name="star_all" type="radio" class="star" checked="checked">
+				  		<% else %>
+				  		 <input name="star_all" type="radio" class="star"> 
+				  		<%end%>
+				  	<%end%>
+			  		</td>
+			  		<td>
+			   			<input type="text" name="" value="コメント">
+			  			<button class="btn btn-default">送信</button>
+			  		 </td>
+			  	</tr>
+			  </table>
+		  </form>
+		  <table class="table table-striped table-bordered table-condensed">
+		  	<tr><th>名前</th><th>評価</th><th>コメント</th></tr>
+		  	<% @item.reputations.each do |reputation| %>
+		  	<tr>
+		  		<td><%= reputation.user.last_name %> <%= reputation.user.first_name %></td>
+		  		<td>
+			  	<% (1..5).each do |cnt| %>
+			  		<% if cnt == reputation.rank %>
+			  		 <input name="star<%= reputation.user.id %>" type="radio" class="star" disabled="disabled" checked="checked">
+			  		<% else %>
+			  		 <input name="star<%= reputation.user.id %>" type="radio" class="star" disabled="disabled"> 
+			  		<%end%>
+			  	<%end%>
+				</td>
+				<td><%= reputation.reputation %></td>
+			</tr>
+			<%end%>		  	
+		  </table>
+		  
+	  </div>
+	  <div class="tab-pane" id="messages">Messageです。</div>
+	</div>
+	</div>
+    </div>
 
+<script>
+	jQuery(function() {
+		$('.tabs a:last').tab('show')
+	})
+</script>
+<%= javascript_include_tag "bootstrap" %>
+<%= javascript_include_tag "bootswatch" %>
+<%= javascript_include_tag "holder" %>
+<!-- フッター -->
+<%= render "footer"%>
+<!-- /フッター -->
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>

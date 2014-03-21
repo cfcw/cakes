@@ -2372,8 +2372,8 @@ input[type="button"].btn-block {
   transition: height 0.35s ease;
 }
 @font-face {
-  src: url('fonts/glyphicons-halflings-regular.eot');
-  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.eot');
+  src: url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.woff') format('woff'), url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('file:///Macintosh HD/Users/yuuho/cakes/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -5884,7 +5884,8 @@ background-color: #FFFFFF;
 color: #808080;
 }
 
-
+<<<<<<< HEAD
+=======
 #banner{
 	background-image: url(../img/banner.png);
 	background-repeat: no-repeat;
@@ -5897,4 +5898,4 @@ color: #808080;
 footer{
 	margin: 0px;
 }
-
+>>>>>>> e4ad5ab199250ba724d08d1abca9b70cffe31c39

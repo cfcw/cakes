@@ -16,8 +16,8 @@ margin:auto;
 }
 
 .item-container{
-	margin-top:30px;
-	padding:15px;
+	margin-top:15px;
+	padding:3px;
 	background:#FFFFFFF;
 }
 .slider-horizontal {width:900px; margin:25px auto; background:#eee; height:240px;}
@@ -38,7 +38,7 @@ margin:auto;
 .item-10 {background:#ccc;}
 
 .wrap {width:900px; margin:50px auto;}
-body {font:15px/25px verdana, sans-serif; color:#333;}
+body {font:15px/25px; color:#333;}
 h1 {font-weight:bold; text-transform:uppercase; color:#ECA5B2; padding:40px 0 0; text-shadow: 1px 1px 5px #552c23;}
 .text {width:600px; float:left;}
 .ad {padding:20px; border:1px solid #ddd; background:#f4f4f4;}
@@ -51,4 +51,7 @@ h1 {font-weight:bold; text-transform:uppercase; color:#ECA5B2; padding:40px 0 0;
 
 .navbar-brand{
 	color: #FDF5E6;
+}
+.tab-pane{
+	margin-top: 10px;
 }
