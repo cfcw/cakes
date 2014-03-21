@@ -46,83 +46,47 @@
 
 		<!-- ケーキリスト -->
 		<div class="page-content col-lg-9" >
-			<!-- Cakes1 -->
+			<!-- おすすめ -->
 			<div class="row" style="text-align:left;">
 				<h2 style="font-size:12pt; text-align:left; padding-left:18px;">おすすめ</h2>
-				<div class="bs-component" style="text-align:center;">
-					<div class="col-lg-3 col-md-3" >
-						<a href="info.html"><img src="asset/js/holder.js/200x125"></a>
-					</div>
-				</div>
+				<% @recommended_items.each do |item|%>
 				<div class="thumbnails" >
 					<div class="col-lg-3 col-md-3" >
-						<a href="info.html"><img src="asset/js/holder.js/200x125"></a>
+						<%= link_to image_tag(item.image_url, :width => '200', :height => '125'), 
+											  {:controller => "items", :action => "show", :id => item.item_id} %>
 					</div>
 				</div>
-				<div class="thumbnails" >
-					<div class="col-lg-3 col-md-3" >
-						<a href="info.html"><img src="asset/js/holder.js/200x125"></a>
-					</div>
-				</div>
-				<div class="thumbnails" >
-					<div class="col-lg-3 col-md-3" >
-						<a href="info.html"><img src="asset/js/holder.js/200x125"></a>
-					</div>
-				</div>
+				<% end %>
 			</div>
-			<!-- /Cakes1 -->
+			<!-- /おすすめ -->
 			<hr>
-			<!-- Cakes2 -->
+			<!-- ランキング -->
 			<div class="row">
 				<h2 style="font-size:12pt; text-align:left; padding-left:18px;">ランキング　 </h2>
+				<% @ranking_items.each do |item|%>
 				<div class="thumbnails" >
 					<div class="col-lg-3 col-md-3" >
-						<a href="info.html"><img src="asset/js/holder.js/200x125"></a>
+						<%= link_to image_tag(item.image_url, :width => '200', :height => '125'), 
+											  {:controller => "items", :action => "show", :id => item.item_id} %>
 					</div>
 				</div>
-				<div class="thumbnails" >
-					<div class="col-lg-3 col-md-3" >
-						<a href="info.html"><img src="asset/js/holder.js/200x125"></a>
-					</div>
-				</div>
-				<div class="thumbnails" >
-					<div class="col-lg-3 col-md-3" >
-						<a href="info.html"><img src="asset/js/holder.js/200x125"></a>
-					</div>
-				</div>
-				<div class="thumbnails" >
-					<div class="col-lg-3 col-md-3" >
-						<a href="info.html"><img src="asset/js/holder.js/200x125"></a>
-					</div>
-				</div>
+				<% end %>
 			</div>
-			<!-- /Cakes2 -->
+			<!-- /ランキング -->
 			<hr>
-			<!-- Cakes3 -->
+			<!-- 近くのお店 -->
 			<div class="row">
 				<h2 style="font-size:12pt; text-align:left; padding-left:18px;">近くのお店</h2>
+				<% @near_by_items.each do |item|%>
 				<div class="thumbnails" >
 					<div class="col-lg-3 col-md-3" >
-						<a href="info.html"><img src="asset/js/holder.js/200x125"></a>
+						<%= link_to image_tag(item.image_url, :width => '200', :height => '125'), 
+											  {:controller => "items", :action => "show", :id => item.item_id} %>
 					</div>
 				</div>
-				<div class="thumbnails" >
-					<div class="col-lg-3 col-md-3" >
-						<a href="info.html"><img src="asset/js/holder.js/200x125"></a>
-					</div>
-				</div>
-				<div class="thumbnails" >
-					<div class="col-lg-3 col-md-3" >
-						<a href="info.html"><img src="asset/js/holder.js/200x125"></a>
-					</div>
-				</div>
-				<div class="thumbnails" >
-					<div class="col-lg-3 col-md-3" >
-						<a href="info.html"><img src="asset/js/holder.js/200x125"></a>
-					</div>
-				</div>
+				<% end %>
 			</div>
-			<!-- /Cakes3 -->
+			<!-- /近くのお店 -->
 			<hr>
 		</div>
 		<!-- //ケーキリスト -->

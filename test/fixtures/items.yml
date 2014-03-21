@@ -61,7 +61,7 @@ four:
   price: 3000
   memo1: メッセージプレート 即日対応可 ラッピングOK
   memo2: 受け取りは２０時まででお願いします。
-  recommended_flg: 0
+  recommended_flg: 1
   rank: 1
   near_by_flg: 5
 
