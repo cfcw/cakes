@@ -1,27 +1,23 @@
 Cakes4CoWorkers::Application.routes.draw do
 
-  resources :target_ages
+  root :to => "login#index"
 
+  #LOGIN
+  get "login/index"
 
-  resources :categories
-
-
-  resources :items
-
-
-  resources :shops
-
-
+  #MyPage
   get "mypage/main"
-
-  root :to => 'login#index'
-  #get 'login#index'
   
+  #Authentication
   post "authentication/auth"
  
+  #Master 
   resources :groups
   resources :users
-
+  resources :target_ages
+  resources :categories
+  resources :items
+  resources :shops
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
