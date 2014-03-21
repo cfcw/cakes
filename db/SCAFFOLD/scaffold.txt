@@ -1,8 +1,10 @@
 rails generate scaffold user last_name:string first_name:string passwd:string email:string gender:integer address:string image_url:text
 rails generate scaffold group group_name:string create_user_id:integer
 rails generate scaffold shop shop_name:string create_user_id:integer 
-rails generate scaffold item item_name:string  
+rails generate scaffold item item_name:string shop:references   
 rails generate scaffold category category_name:string
 rails generate scaffold target_age target_age_range:string
+rails generate scaffold gender gender:string
+rails generate scaffold reputation shop:references item:references user:references reputation:string rank:integer
 
   

@@ -1,5 +1,11 @@
 Cakes4CoWorkers::Application.routes.draw do
 
+  resources :reputations
+
+
+  resources :genders
+
+
   root :to => "login#index"
 
   #LOGIN

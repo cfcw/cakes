@@ -1,7 +1,66 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  item_name: MyString
+  id: 1
+  shop_id: 1
+  item_name: ケーキA
+  category_id: 1
+  target_gender_id: 1
+  image_url: slide1.jpg
+  comment1: さかな好きのあの人にとっておきのケーキです！
+  comment2: さかなが大好きな人に最適なプレゼント用ケーキです。
+  price: 3000
+  memo1: メッセージプレート 即日対応可 ラッピングOK
+  memo2: 受け取りは２０時まででお願いします。
 
 two:
-  item_name: MyString
+  id: 2
+  shop_id: 1
+  item_name: ケーキB
+  category_id: 1
+  target_gender_id: 1
+  image_url: slide2.jpg
+  comment1: いちご好きのあの人にとっておきのケーキです！
+  comment2: いちごが大好きな人に最適なプレゼント用ケーキです。
+  price: 3000
+  memo1: メッセージプレート 即日対応可 ラッピングOK
+  memo2: 受け取りは２０時まででお願いします。
+
+three:
+  id: 3
+  shop_id: 1
+  item_name: ケーキC
+  category_id: 1
+  target_gender_id: 1
+  image_url: slide3.jpg
+  comment1: チョコレート好きのあの人にとっておきのケーキです！
+  comment2: チョコレートが大好きな人に最適なプレゼント用ケーキです。
+  price: 3000
+  memo1: メッセージプレート 即日対応可 ラッピングOK
+  memo2: 受け取りは２０時まででお願いします。
+
+four:
+  id: 4
+  shop_id: 1
+  item_name: ケーキD
+  category_id: 1
+  target_gender_id: 1
+  image_url: slide4.jpg
+  comment1: 生クリーム好きのあの人にとっておきのケーキです！
+  comment2: 生クリームが大好きな人に最適なプレゼント用ケーキです。
+  price: 3000
+  memo1: メッセージプレート 即日対応可 ラッピングOK
+  memo2: 受け取りは２０時まででお願いします。
+
+five:
+  id: 5
+  shop_id: 1
+  item_name: ケーキE
+  category_id: 1
+  target_gender_id: 1
+  image_url: slide1.jpg
+  comment1: ビター好きのあの人にとっておきのケーキです！
+  comment2: カカオが大好きな人に最適なプレゼント用ケーキです。
+  price: 3000
+  memo1: メッセージプレート 即日対応可 ラッピングOK
+  memo2: 受け取りは２０時まででお願いします。

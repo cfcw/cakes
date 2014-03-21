@@ -1,9 +1,43 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  shop_name: MyString
+  id: 1
+  shop_name: ドゥーシュークル
   create_user_id: 1
+  zip_cd: 142-0063
+  address: 東京都品川区荏原2-18-5 ストーク武蔵小山弐番館1階
+  phone: 03-3781-0370
+  start_time: '10:30'
+  end_time: '19:00'
+  time_info: 水曜のみ14時開店
+  shop_info: 武蔵小山駅周辺で一番のケーキ屋さんです。
+  memo1: 日・月
+  memo2: 特になし
 
 two:
-  shop_name: MyString
+  id: 2
+  shop_name: ラ・フィーユ
   create_user_id: 1
+  zip_cd: 142-0063
+  address: 東京都品川区荏原2-18-5 ストーク武蔵小山弐番館1階
+  phone: 03-3781-0370
+  start_time: '10:30'
+  end_time: '19:00'
+  time_info: 水曜のみ14時開店
+  shop_info: 武蔵小山駅周辺で一番のケーキ屋さんです。
+  memo1: 日・月
+  memo2: 特になし
+  
+three:
+  id: 3
+  shop_name: シェルボン
+  create_user_id: 1
+  zip_cd: 142-0063
+  address: 東京都品川区荏原2-18-5 ストーク武蔵小山弐番館1階
+  phone: 03-3781-0370
+  start_time: '10:30'
+  end_time: '19:00'
+  time_info: 水曜のみ14時開店
+  shop_info: 武蔵小山駅周辺で一番のケーキ屋さんです。
+  memo1: 日・月
+  memo2: 特になし

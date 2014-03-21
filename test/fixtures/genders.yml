@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  gender: 男性
+
+two:
+  id: 2
+  gender: 女性
+  
+three:
+  id: 0
+  gender: 性別不詳  

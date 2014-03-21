@@ -1,21 +1,27 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  id: 1
   category_name: ショートケーキ
 
 two:
+  id: 2
   category_name: チョコレートケーキ
 
 three:
+  id: 3
   category_name: チーズケーキ
   
 four:
+  id: 4
   category_name: タルト
   
 five:
+  id: 5
   category_name: モンブラン
   
 six:
+  id: 6
   category_name: オリジナル
 
   

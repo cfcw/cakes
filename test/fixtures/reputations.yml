@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+one:
+  shop_id: 1
+  item_id: 1
+  user_id: 1
+  reputation: リアルな魚デザインが上司にウケました！
+  rank: 1
+
+two:
+  shop_id: 1
+  item_id: 1
+  user_id: 1
+  reputation: いいね2
+  rank: 5
+
+three:
+  shop_id: 1
+  item_id: 1
+  user_id: 1
+  reputation: いいね3
+  rank: 5
+
+four:
+  shop_id: 1
+  item_id: 1
+  user_id: 1
+  reputation: いいね4
+  rank: 5
+
+five:
+  shop_id: 1
+  item_id: 1
+  user_id: 1
+  reputation: いいね5
+  rank: 5

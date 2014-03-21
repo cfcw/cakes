@@ -1,9 +1,2 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
-one:
-  group_name: MyString
-  create_user_id: 
-
-two:
-  group_name: MyString
-  create_user_id: 

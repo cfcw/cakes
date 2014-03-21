@@ -1,73 +1,81 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  id: 1
   last_name: 神本
   first_name: 侑季
   passwd: 123
   email: a@.co.jp
-  gender: 1
+  gender_id: 2
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/t1/c1.0.99.100/p100x100/1528631_550826905007625_391488968_a.jpg"
 
 two:
+  id: 2
   last_name: 大嶋
   first_name: 直子
   passwd: 123
   email: a@.co.jp
-  gender: 1
+  gender_id: 2
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/t1/c8.8.95.96/p111x111/1146714_10201968591843210_1150148203_a.jpg"
 
 three:
+  id: 3
   last_name: 花井
   first_name: 亜由子
   passwd: 123
   email: a@.co.jp
-  gender: 1
+  gender_id: 2
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/t1/c1.0.99.100/p100x100/1175303_549945895070785_984019390_a.jpg"
 
 fuor:
+  id: 4
   last_name: 天沼
   first_name: 千鶴
   passwd: 123
   email: a@.co.jp
-  gender: 1
+  gender_id: 2
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/t1/c7.7.85.86/253789_228143023863511_8144883_s.jpg"
   
 five:  
+  id: 5
   last_name: 佐藤
   first_name: 香織
   passwd: 123
   email: a@.co.jp
-  gender: 1
+  gender_id: 2
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1.0-1/c1.0.99.100/p100x100/1377186_10202564816348156_1349078972_a.jpg"
   
 six:  
+  id: 6
   last_name: Ling
   first_name: Xu Ling
   passwd: 123
   email: a@.co.jp
-  gender: 1
+  gender_id: 1
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/t1.0-1/c8.8.95.96/p111x111/10537_10151416414027191_544208549_a.jpg"
 
 seven:
+  id: 7
   last_name: 伊東
   first_name: 雄歩
   passwd: 123
   email: a@.co.jp
-  gender: 1
+  gender_id: 1
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/t1/c8.7.94.95/p111x111/403286_256622294418198_1713860830_a.jpg"
 
 eight:
+  id: 8
   last_name: 田島
   first_name: 啓之
   passwd: 123
   email: tajihiro2@gmail.com
-  gender: 1
+  gender_id: 1
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/t1.0-1/c8.7.94.95/p111x111/314955_2236792117622_46462226_a.jpg"

@@ -1,17 +1,22 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  id: 1
   target_age_range: 0〜12
 
 two:
+  id: 2
   target_age_range: 13〜20
 
 three:
+  id: 3
   target_age_range: 20〜30
 
 four:
+  id: 4
   target_age_range: 30〜40
 
 five:
+  id: 5
   target_age_range: 40〜
   
