@@ -2,7 +2,7 @@
 # MypageController
 # Author:: Hiroyuki, Tajima
 # Date:: 2014.03.21
-class MypageController < ApplicationController
+class MypageController < SessionController
   def main
     #お勧め商品取得
     sql = "select id item_id, 

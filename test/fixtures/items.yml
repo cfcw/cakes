@@ -19,7 +19,7 @@ one:
 
 two:
   id: 2
-  shop_id: 1
+  shop_id: 2
   item_name: ケーキB
   category_id: 1
   target_gender_id: 1
@@ -51,7 +51,7 @@ three:
 
 four:
   id: 4
-  shop_id: 1
+  shop_id: 2
   item_name: ケーキD
   category_id: 1
   target_gender_id: 1
@@ -67,7 +67,7 @@ four:
 
 five:
   id: 5
-  shop_id: 1
+  shop_id: 3
   item_name: ケーキE
   category_id: 1
   target_gender_id: 1

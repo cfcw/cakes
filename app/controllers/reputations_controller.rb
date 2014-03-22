@@ -1,3 +1,7 @@
+#coding: utf-8
+# ReputationsController
+# Author:: Hiroyuki, Tajima
+# Date:: 2014.03.22
 class ReputationsController < ApplicationController
   # GET /reputations
   # GET /reputations.json

@@ -3,6 +3,7 @@
 # Author:: Hiroyuki, Tajima
 # Date:: 2014.03.15
 class AuthenticationController < ApplicationController
+  skip_before_filter :check_login, :only => [:auth]
 
   #
   # ログイン認証処理

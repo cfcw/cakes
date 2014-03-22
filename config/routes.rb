@@ -1,12 +1,10 @@
 Cakes4CoWorkers::Application.routes.draw do
 
-  resources :reputations
+  #INDEX TOP
+  root :to => "index#index"
 
-
-  resources :genders
-
-
-  root :to => "login#index"
+  #INDEX
+  get "index/index"
 
   #LOGIN
   get "login/index"
@@ -24,6 +22,8 @@ Cakes4CoWorkers::Application.routes.draw do
   resources :categories
   resources :items
   resources :shops
+  resources :reputations
+  resources :genders
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
