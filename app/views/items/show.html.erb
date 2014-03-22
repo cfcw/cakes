@@ -24,7 +24,9 @@
 				
 				<div><a href="javascript:void(document.form1.submit())" >
                 <button class="btn btn-primary cart-btn"><i class="icon-shopping-cart icon-white"></i> お気に入り登録</button></a>	</div>
-				<div><a href="http://line.me/R/msg/text/?LINE%E3%81%A7%E9%80%81%E3%82%8B%0D%0Ahttp%3A%2F%2Fline.me%2F"><img src="assets/img/linebutton_88x20.png" width="100" height="20" alt="LINEで送る" /></a>
+				<div>
+						<%= link_to image_tag("linebutton_88x20.png", :width => '100', :height => '20', :alt => "LINEで送る"), 
+											  "http://line.me/R/msg/text/?LINE%E3%81%A7%E9%80%81%E3%82%8B%0D%0Ahttp%3A%2F%2Fline.me%2F" %>
 				</div>
 			</div>
 		</div>
