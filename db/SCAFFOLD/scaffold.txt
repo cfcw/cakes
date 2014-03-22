@@ -6,5 +6,5 @@ rails generate scaffold category category_name:string
 rails generate scaffold target_age target_age_range:string
 rails generate scaffold gender gender:string
 rails generate scaffold reputation shop:references item:references user:references reputation:string rank:integer
-
+rails generate scaffold history user:references action:string ip_address:string
   

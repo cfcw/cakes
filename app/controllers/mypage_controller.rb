@@ -21,6 +21,14 @@ class MypageController < SessionController
     #近所商品取得
     sql = generate_near_by_sql(@keywords)
     @near_by_items  = Item.find_by_sql([sql, @keywords.params])
+    
+    #ログ取得
+    history = History.new
+    history.user_id = session[:user_id]
+    history.user_name = session[:login_name]
+    history.action = "MyPage"
+    history.ip_address = request.remote_ip
+    history.save    
   end
   
   #

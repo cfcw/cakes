@@ -10,12 +10,21 @@ class AuthenticationController < ApplicationController
   #
   def auth
     user = User.authenticate(params[:email], params[:passwd])
-    
+          
     if user then
       #ログイン情報セッション登録
       session[:is_login] = true
       session[:user_id] = user.id
       session[:login_name] = user.login_name
+
+      #ログ取得
+      history = History.new
+      history.user_id = session[:user_id]
+      history.user_name = session[:login_name]
+      history.action = "ログイン"
+      history.ip_address = request.remote_ip
+      history.save
+      
       redirect_to mypage_main_path
     else      
       reset_session
@@ -29,6 +38,14 @@ class AuthenticationController < ApplicationController
   # ログアウト処理
   #
   def logout
+    #ログ取得
+    history = History.new
+    history.user_id = session[:user_id]
+    history.user_name = session[:login_name]
+    history.action = "ログアウト"
+    history.ip_address = request.remote_ip
+    history.save
+    
     reset_session
     flash[:msg] = "ログアウトしました。"
     redirect_to login_index_path

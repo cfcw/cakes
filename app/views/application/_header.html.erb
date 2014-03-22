@@ -16,7 +16,11 @@
 		<div class="navbar-collapse collapse" id="navbar-main">
 			<ul class="nav navbar-nav navbar-right">
 				<li>
+					<% if session[:is_login] %>
+					<%= link_to(session[:login_name] + ' 様', mypage_main_path) %>
+					<% else %>
 					<%= link_to("ご利用ガイド", guide_index_path, {:target => "_blank", :width => "200", :height => "200"}) %>
+					<% end %>
 				</li>
 				<li>
 					<% if session[:is_login] %>

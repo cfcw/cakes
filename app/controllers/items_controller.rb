@@ -20,10 +20,17 @@ class ItemsController < SessionController
     @tab_mode = params[:tab_mode]
     #商品詳細取得
     @item = Item.find(params[:id])
-    #@reputations = Reputation.find_all_by_shop_id_and_item_id(@item.shop_id, @item.id)
     @reputation = Reputation.new
     @reputation.shop_id = @item.shop_id
     @reputation.item_id = @item.id
+
+    #ログ取得
+    history = History.new
+    history.user_id = session[:user_id]
+    history.user_name = session[:login_name]
+    history.action = "商品詳細:" + @item.id.to_s
+    history.ip_address = request.remote_ip
+    history.save
     
     respond_to do |format|
       format.html # show.html.erb
