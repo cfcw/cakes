@@ -1,58 +1,45 @@
+<!-- ヘッダー -->
+<%= render "header"%>
+<!-- /ヘッダー -->
 
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="../" class="navbar-brand" style="font-family:Futura;">Cake's for Co-Workers</a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://builtwithbootstrap.com/" target="_blank">ご利用ガイド</a></li>
-          </ul>
+<!-- コンテンツ -->
+<div class="container">
 
-        </div>
-      </div>
-    </div>
-
-
-    <div class="container">
-
-        <div class="row">
-	      <div class="page-header col-lg-6 col-xs-offset-1" id="banner">
-          </div>
-          <div class="page-content col-lg-3" style="margin-top:18px;" >
-    		<%= form_tag({:controller => "authentication", :action => "auth", :class=>"form-signin", :role =>"form" }) do %>
-					<!-- error message -->
-					<% if flash[:msg] %>
-					<p><font color="red">※<%= flash[:msg]%></font></p>
-					<% end %>
-					<!-- /error message -->
-			
-                    <h2 class="form-signin-heading">Please sign in</h2>
-                    <%= text_field_tag(:email, nil, :placeholder => "Email address", :class => "form-control", :autofocus => true, :required =>"") %>
-					<%= password_field_tag(:passwd, nil, :placeholder => "Password", :class => "form-control") %>
-                   <label class="checkbox">
-                      <input type="checkbox" value="remember-me"> Remember me
-                    </label>
-                    <button class="btn btn-lg btn-default" type="submit" style="padding-right:30px; padding-left:30px; margin-bottom:15px;">ログイン</button>
+	<div class="row">
+		<div class="page-header col-lg-6 col-xs-offset-1" id="banner"></div>
+		<div class="page-content col-lg-3" style="margin-top:18px;" >
+			<%= form_tag({:controller => "authentication", :action => "auth", :class=>"form-signin", :role =>"form" }) do %>
+			<!-- error message -->
+			<% if flash[:msg] %>
+			<p>
+				<font color="red">※<%= flash[:msg]%></font>
+			</p>
 			<% end %>
-                  <label><a href="">新規会員登録</a></label>
-                  <label><a href="">パスワードを忘れた方はこちら</a></label>
-                    
-                  <div>
-                      <a class="btn btn-block btn-social btn-facebook">
-                        <i class="fa fa-facebook"></i> Sign in with Facebook
-                      </a>
-                      <a class="btn btn-block btn-social btn-twitter">
-                        <i class="fa fa-twitter"></i> Sign in with Twitter
-                      </a>
-                  </div>
-          </div>
-        </div>
-       </div>
-       <hr style="border-color:pink;">
-    </div>
+			<!-- /error message -->
+
+			<h2 class="form-signin-heading">Please sign in</h2>
+			<%= text_field_tag(:email, nil, :placeholder => "Email address", :class => "form-control", :autofocus => true, :required =>"") %>
+			<%= password_field_tag(:passwd, nil, :placeholder => "Password", :class => "form-control") %>
+			<label class="checkbox">
+				<input type="checkbox" value="remember-me">
+				Remember me </label>
+			<button class="btn btn-lg btn-default" type="submit" style="padding-right:30px; padding-left:30px; margin-bottom:15px;">
+				ログイン
+			</button>
+			<% end %>
+			<label><a href="">新規会員登録</a></label>
+			<label><a href="">パスワードを忘れた方はこちら</a></label>
+
+			<div>
+				<a class="btn btn-block btn-social btn-facebook"> <i class="fa fa-facebook"></i> Sign in with Facebook </a>
+				<a class="btn btn-block btn-social btn-twitter"> <i class="fa fa-twitter"></i> Sign in with Twitter </a>
+			</div>
+		</div>
+	</div>
+</div>
+<hr style="border-color:pink;">
+</div>
+<!-- コンテンツ -->
+<!-- ヘッダー -->
+<%= render "footer"%>
+<!-- /ヘッダー -->

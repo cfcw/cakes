@@ -1,5 +1,6 @@
 Cakes4CoWorkers::Application.routes.draw do
 
+
   #INDEX TOP
   root :to => "index#index"
 
@@ -14,7 +15,11 @@ Cakes4CoWorkers::Application.routes.draw do
   
   #Authentication
   post "authentication/auth"
+  get "authentication/logout"
  
+  #Guide
+  get "guide/index"
+
   #Master 
   resources :groups
   resources :users

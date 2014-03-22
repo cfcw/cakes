@@ -20,7 +20,7 @@ class AuthenticationController < ApplicationController
     else      
       reset_session
       flash[:msg] = "ログインが不正です。"
-      redirect_to root_path
+      redirect_to login_index_path
     end
     
   end
@@ -31,6 +31,6 @@ class AuthenticationController < ApplicationController
   def logout
     reset_session
     flash[:msg] = "ログアウトしました。"
-    redirect_to root_path
+    redirect_to login_index_path
   end
 end
