@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20140321111048) do
     t.string   "item_name"
     t.integer  "category_id"
     t.integer  "target_gender_id"
+    t.integer  "target_age_id"
     t.text     "image_url"
     t.string   "comment1"
     t.string   "comment2"

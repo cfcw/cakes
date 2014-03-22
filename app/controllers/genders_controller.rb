@@ -1,3 +1,7 @@
+#coding: utf-8
+# GendersController
+# Author:: Hiroyuki, Tajima
+# Date:: 2014.03.22
 class GendersController < ApplicationController
   # GET /genders
   # GET /genders.json

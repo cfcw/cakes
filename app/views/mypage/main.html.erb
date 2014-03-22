@@ -11,36 +11,36 @@
 
 		<!-- 検索フォーム -->
 		<div class="page-content col-lg-9" >
-			<form class="well form-search">
-				<input type="text" class="input-medium search-query">
+			<%= form_tag({:action => "main"}, {:class => "well form-search"}) do %>
+				<input type="text" name="item_name" class="input-medium search-query">
 				<button type="submit" class="btn">
 					検 索
 				</button>
 				<br>
-				<select name="cake_category" style="border-right:1px blacl solid;">
-					<option selected="selected">ケーキの種類</option>
-					<option>ショートケーキ</option>
-					<option>チョコレートケーキ</option>
-					<option>チーズケーキ</option>
-					<option>タルト</option>
-					<option>モンブラン</option>
-					<option>オリジナル</option>
+				<select name="category_id" style="border-right:1px blacl solid;">
+					<option selected="selected" value="">ケーキの種類</option>
+					<option value="1">ショートケーキ</option>
+					<option value="2">チョコレートケーキ</option>
+					<option value="3">チーズケーキ</option>
+					<option value="4">タルト</option>
+					<option value="5">モンブラン</option>
+					<option value="6">オリジナル</option>
 				</select>
-				<select name="target_age" style="border-right:1px blacl solid;">
-					<option selected="selected">対象年齢層</option>
-					<option>~12さい</option>
-					<option>13~20</option>
-					<option>20~30</option>
-					<option>30~40</option>
-					<option>40~</option>
+				<select name="target_age_id" style="border-right:1px blacl solid;">
+					<option selected="selected" value="">対象年齢層</option>
+					<option value="1">~12さい</option>
+					<option value="2">13~20</option>
+					<option value="3">20~30</option>
+					<option value="4">30~40</option>
+					<option value="5">40~</option>
 				</select>
-				<select name="target_age" style="border-right:1px blacl solid;">
-					<option selected="selected">対象性別</option>
-					<option>男</option>
-					<option>女</option>
-					<option>性別不詳</option>
+				<select name="target_gender_id" style="border-right:1px blacl solid;">
+					<option selected="selected" value="">対象性別</option>
+					<option value="1">男</option>
+					<option value="2">女</option>
+					<option value="3">性別不詳</option>
 				</select>
-			</form>
+			<% end %>
 		</div>
 		<!-- /検索フォーム -->
 

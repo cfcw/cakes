@@ -12,6 +12,7 @@ Cakes4CoWorkers::Application.routes.draw do
 
   #MyPage
   get "mypage/main"
+  post "mypage/main"
   
   #Authentication
   post "authentication/auth"

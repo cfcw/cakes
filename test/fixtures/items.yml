@@ -5,7 +5,8 @@ one:
   shop_id: 1
   item_name: ケーキA
   category_id: 1
-  target_gender_id: 1
+  target_gender_id: 2
+  target_age_id: 1
   image_url: slide5.jpg
   comment1: さかな好きのあの人にとっておきのケーキです！
   comment2: さかなが大好きな人に最適なプレゼント用ケーキです。
@@ -21,8 +22,9 @@ two:
   id: 2
   shop_id: 2
   item_name: ケーキB
-  category_id: 1
-  target_gender_id: 1
+  category_id: 3
+  target_gender_id: 2
+  target_age_id: 1
   image_url: slide2.jpg
   comment1: いちご好きのあの人にとっておきのケーキです！
   comment2: いちごが大好きな人に最適なプレゼント用ケーキです。
@@ -38,7 +40,8 @@ three:
   shop_id: 1
   item_name: ケーキC
   category_id: 1
-  target_gender_id: 1
+  target_gender_id: 2
+  target_age_id: 3
   image_url: slide3.jpg
   comment1: チョコレート好きのあの人にとっておきのケーキです！
   comment2: チョコレートが大好きな人に最適なプレゼント用ケーキです。
@@ -53,8 +56,9 @@ four:
   id: 4
   shop_id: 2
   item_name: ケーキD
-  category_id: 1
-  target_gender_id: 1
+  category_id: 3
+  target_gender_id: 2
+  target_age_id: 3
   image_url: slide4.jpg
   comment1: 生クリーム好きのあの人にとっておきのケーキです！
   comment2: 生クリームが大好きな人に最適なプレゼント用ケーキです。
@@ -69,8 +73,9 @@ five:
   id: 5
   shop_id: 3
   item_name: ケーキE
-  category_id: 1
+  category_id: 2
   target_gender_id: 1
+  target_age_id: 3
   image_url: slide1.jpg
   comment1: ビター好きのあの人にとっておきのケーキです！
   comment2: カカオが大好きな人に最適なプレゼント用ケーキです。

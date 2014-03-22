@@ -5,6 +5,7 @@ class CreateItems < ActiveRecord::Migration
       t.string :item_name
       t.references :category
       t.integer :target_gender_id
+      t.integer :target_age_id
       t.text :image_url
       t.string :comment1
       t.string :comment2
