@@ -5,13 +5,13 @@ one:
   shop_name: ドゥーシュークル
   create_user_id: 1
   zip_cd: 142-0063
-  address: 東京都港区赤坂2-18-5 赤坂弐番館1階
+  address: 東京都港区赤坂2-18-5 赤坂パークビルディング
   phone: 03-3781-0370
-  start_time: '10:30'
-  end_time: '19:00'
-  time_info: 水曜のみ14時開店
+  start_time: '10:00'
+  end_time: '20:00'
+  time_info: 年中無休
   shop_info: 赤坂駅周辺で一番のケーキ屋さんです。
-  memo1: 日・月
+  memo1: 日
   memo2: 特になし
 
 two:
@@ -19,13 +19,13 @@ two:
   shop_name: ラ・フィーユ
   create_user_id: 1
   zip_cd: 142-0063
-  address: 東京都台東区蔵前2-18-5 弐番館1階
+  address: 東京都台東区蔵前2-18-5 浅草堂
   phone: 03-3781-0370
   start_time: '10:30'
   end_time: '19:00'
-  time_info: 水曜のみ14時開店
-  shop_info: 武蔵小山駅周辺で一番のケーキ屋さんです。
-  memo1: 日・月
+  time_info: 木曜のみ12時開店
+  shop_info: 浅草で一番のケーキ屋さんです。
+  memo1: 月
   memo2: 特になし
   
 three:
@@ -33,11 +33,11 @@ three:
   shop_name: シェルボン
   create_user_id: 1
   zip_cd: 142-0063
-  address: 東京都江戸川区錦糸町2-18-5 錦糸町弐番館12階
+  address: 東京都江戸川区錦糸町2-18-5 錦糸アルカキット
   phone: 03-3781-0370
   start_time: '10:30'
   end_time: '19:00'
-  time_info: 水曜のみ14時開店
+  time_info: 10時開店
   shop_info: 錦糸町駅周辺で一番のケーキ屋さんです。
   memo1: 日・月
   memo2: 特になし
