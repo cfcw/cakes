@@ -3,7 +3,7 @@
 <!-- /ヘッダー -->
 
 <!-- コンテンツ -->
-    <div class="container">
+<div class="container">
 	<div class="row">
 		<div class="item-container col-md-10  col-md-offset-1">
 			<div class="item-info col-md-6">
@@ -31,25 +31,54 @@
 			</div>
 		</div>
 		</div> 
-		<div class="col-md-10">
-			<ul class="nav nav-tabs">
-	  <li class="active"><a href="#home" data-toggle="tab">基本情報</a></li>
-	  <li><a href="#profile" data-toggle="tab">口コミ</a></li>
-	  <li><a href="#messages" data-toggle="tab">地図</a></li>
-	</ul>
-	<div class="tab-content">
-	  <div class="tab-pane active" id="home">
-	  	<p>〒<%= @item.shop.zip_cd %><br>
-	  	<%= @item.shop.address %></p>
-	  	<p>Tel:<%= @item.shop.phone %></p>
-	  	<p>店舗情報：<%= @item.shop.shop_info %></p>
-	  	<p>営業時間：<%= @item.shop.start_time %>～<%= @item.shop.end_time %>（<%= @item.shop.time_info %>）</p>
-	  	<p>定休日：<%= @item.memo1 %></p>
-	  	<p>オプション種別:<%= @item.shop.memo2 %></p>
-	  	<p>注意事項</p>
-	  	<p>備考</p>
-	  </div>
-	  <div class="tab-pane" id="profile">
+
+	<div class="col-md-10">
+		<!-- タブ -->		
+		<ul class="nav nav-tabs">
+		<% if @tab_mode.nil? %>
+			<li class="active"><a href="#basic" data-toggle="tab">基本情報</a></li>
+		<% else %>
+			<li><a href="#basic" data-toggle="tab">基本情報</a></li>
+		<% end %> 
+		<% if @tab_mode == 'reputation' %>
+			<li class="active"><a href="#reputation" data-toggle="tab">口コミ</a></li>
+		<% else %>
+			<li><a href="#reputation" data-toggle="tab">口コミ</a></li>
+		<% end %> 
+		<% if @tab_mode == 'map' %>
+			<li class="active"><a href="#map" data-toggle="tab">地図</a></li>
+		<% else %>
+			<li><a href="#map" data-toggle="tab">地図</a></li>
+		<% end %> 
+		</ul>
+		<!-- /タブ -->		
+		
+		<div class="tab-content">
+			<!-- 基本情報 -->	
+			<% if @tab_mode.nil? %>
+		  	<div class="tab-pane active" id="basic">
+			<% else %>
+		  	<div class="tab-pane" id="basic">
+			<% end %> 
+			  	<p>〒<%= @item.shop.zip_cd %><br>
+			  	<%= @item.shop.address %></p>
+			  	<p>Tel:<%= @item.shop.phone %></p>
+			  	<p>店舗情報：<%= @item.shop.shop_info %></p>
+			  	<p>営業時間：<%= @item.shop.start_time %>～<%= @item.shop.end_time %>（<%= @item.shop.time_info %>）</p>
+			  	<p>定休日：<%= @item.memo1 %></p>
+			  	<p>オプション種別:<%= @item.shop.memo2 %></p>
+			  	<p>注意事項</p>
+			  	<p>備考</p>
+			</div>
+			<!-- /基本情報 -->		
+	  
+	  
+			<!-- 口コミ評価 -->		
+			<% if @tab_mode == 'reputation' %>
+			<div class="tab-pane active" id="reputation">
+			<% else %>
+			<div class="tab-pane" id="reputation">
+			<% end %> 
 	  		<label>クチコミする</label>  
 	  		
 			<%= form_for(@reputation, :url =>{:action => "create"}, :method => "POST") do |f| %>
@@ -68,6 +97,7 @@
 			  			<%= f.text_field :reputation, :placeholder => "コメント" %>
 			  			<%= f.hidden_field :shop_id %>
 			  			<%= f.hidden_field :item_id %>
+			  			<%= hidden_field_tag :tab_mode, 'reputation'  %>
 			  			<%= f.submit "送信"%>
 			  			<p id="notice"><%= notice %></p>
 			  		</td>
@@ -93,12 +123,21 @@
 			</tr>
 			<%end%>		  	
 		  </table>
-		  
-	  </div>
-	  <div class="tab-pane" id="messages">Messageです。</div>
+	  	</div>
+		<!-- /口コミ評価 -->
+		
+		<!-- 地図 -->		
+			<% if @tab_mode == 'map' %>
+			<div class="tab-pane active" id="map">
+			<% else %>
+			<div class="tab-pane" id="map">
+			<% end %>
+				Google MAP
+			</div>
+		<!-- 地図 -->		
+			</div>
 	</div>
-	</div>
-    </div>
+</div>
 
 <script>
 	jQuery(function() {

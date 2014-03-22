@@ -13,6 +13,7 @@ class ItemsController < SessionController
   # GET /items/1
   # GET /items/1.json
   def show
+    @tab_mode = params[:tab_mode]
     #商品詳細取得
     @item = Item.find(params[:id])
     #@reputations = Reputation.find_all_by_shop_id_and_item_id(@item.shop_id, @item.id)
@@ -30,13 +31,14 @@ class ItemsController < SessionController
   # 評価登録処理
   #
   def create
+    tab_mode = params[:tab_mode]    
     @reputation = Reputation.new(params[:reputation])
     @reputation.user_id = session[:user_id]
     @reputation.rank = params[:rank]
     
     respond_to do |format|
       if @reputation.save
-        format.html { redirect_to :controller => "items", :action => "show", :id => @reputation.item_id, notice: '口コミを登録しました。' }
+        format.html { redirect_to :controller => "items", :action => "show", :id => @reputation.item_id, :tab_mode => tab_mode, notice: '口コミを登録しました。' }
         format.json { render json: @reputation, status: :created, location: @reputation }
       else
         format.html { render action: "new" }
