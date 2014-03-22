@@ -1,3 +1,7 @@
+#coding: utf-8
+# ItemsController
+# Author:: Hiroyuki, Tajima
+# Date:: 2014.03.22
 class ItemsController < SessionController
   # GET /items
   # GET /items.json

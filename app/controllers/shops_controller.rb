@@ -1,3 +1,7 @@
+#coding: utf-8
+# ShopsController
+# Author:: Hiroyuki, Tajima
+# Date:: 2014.03.22
 class ShopsController < ApplicationController
   # GET /shops
   # GET /shops.json
