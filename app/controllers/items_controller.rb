@@ -13,13 +13,38 @@ class ItemsController < SessionController
   # GET /items/1
   # GET /items/1.json
   def show
+    #商品詳細取得
     @item = Item.find(params[:id])
-
+    #@reputations = Reputation.find_all_by_shop_id_and_item_id(@item.shop_id, @item.id)
+    @reputation = Reputation.new
+    @reputation.shop_id = @item.shop_id
+    @reputation.item_id = @item.id
+    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @item }
     end
   end
+
+  #
+  # 評価登録処理
+  #
+  def create
+    @reputation = Reputation.new(params[:reputation])
+    @reputation.user_id = session[:user_id]
+    @reputation.rank = params[:rank]
+    
+    respond_to do |format|
+      if @reputation.save
+        format.html { redirect_to :controller => "items", :action => "show", :id => @reputation.item_id, notice: '口コミを登録しました。' }
+        format.json { render json: @reputation, status: :created, location: @reputation }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @reputation.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
 
   # GET /items/new
   # GET /items/new.json
@@ -37,21 +62,7 @@ class ItemsController < SessionController
     @item = Item.find(params[:id])
   end
 
-  # POST /items
-  # POST /items.json
-  def create
-    @item = Item.new(params[:item])
 
-    respond_to do |format|
-      if @item.save
-        format.html { redirect_to @item, notice: 'Item was successfully created.' }
-        format.json { render json: @item, status: :created, location: @item }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @item.errors, status: :unprocessable_entity }
-      end
-    end
-  end
 
   # PUT /items/1
   # PUT /items/1.json

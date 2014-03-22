@@ -19,6 +19,10 @@ Cakes4CoWorkers::Application.routes.draw do
  
   #Guide
   get "guide/index"
+  
+  #Items
+  match "items/show/:id" => "items#show"
+  match "items/create" => "items#create"
 
   #Master 
   resources :groups

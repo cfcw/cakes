@@ -14,7 +14,7 @@
 				<h3 style="font-size:14pt; text-align:left;"><%= @item.comment1 %></h2>
 				<p><%= @item.comment2 %></p>
 				<p>サイズ: 直径15cm</p>
-				<p>価格:<%= @item.price %></p>
+				<p>価格:<%= number_with_delimiter(@item.price) %></p>
 				<form>
 				<div><a href="javascript:void(document.form1.submit())" >
 				<button class="btn btn-primary cart-btn"><i class="icon-shopping-cart icon-white"></i> カートに入れる</button></a>
@@ -25,7 +25,7 @@
 				<div><a href="javascript:void(document.form1.submit())" >
                 <button class="btn btn-primary cart-btn"><i class="icon-shopping-cart icon-white"></i> お気に入り登録</button></a>	</div>
 				<div>
-						<%= link_to image_tag("linebutton_88x20.png", :width => '100', :height => '20', :alt => "LINEで送る"), 
+						<%= link_to image_tag("linebutton_88x20.png", :width => '100', :height => '20', :alt => "LINEで送る"),
 											  "http://line.me/R/msg/text/?LINE%E3%81%A7%E9%80%81%E3%82%8B%0D%0Ahttp%3A%2F%2Fline.me%2F" %>
 				</div>
 			</div>
@@ -50,26 +50,31 @@
 	  	<p>備考</p>
 	  </div>
 	  <div class="tab-pane" id="profile">
-		  <form>
-		  		<label>クチコミする</label>  
+	  		<label>クチコミする</label>  
+	  		
+			<%= form_for(@reputation, :url =>{:action => "create"}, :method => "POST") do |f| %>
 			  <table>
 			  	<tr>
 			  		<td>
 				  	<% (1..5).each do |cnt| %>
 				  		<% if cnt == @item.rank %>
-				  		 <input name="star_all" type="radio" class="star" checked="checked">
+				  		 <input name="rank" type="radio" class="star" value="<%= cnt %>" checked="checked">
 				  		<% else %>
-				  		 <input name="star_all" type="radio" class="star"> 
+				  		 <input name="rank" type="radio" class="star" value="<%= cnt %>"> 
 				  		<%end%>
 				  	<%end%>
 			  		</td>
 			  		<td>
-			   			<input type="text" name="" value="コメント">
-			  			<button class="btn btn-default">送信</button>
-			  		 </td>
+			  			<%= f.text_field :reputation, :placeholder => "コメント" %>
+			  			<%= f.hidden_field :shop_id %>
+			  			<%= f.hidden_field :item_id %>
+			  			<%= f.submit "送信"%>
+			  			<p id="notice"><%= notice %></p>
+			  		</td>
 			  	</tr>
 			  </table>
-		  </form>
+			<% end %>
+		  
 		  <table class="table table-striped table-bordered table-condensed">
 		  	<tr><th>名前</th><th>評価</th><th>コメント</th></tr>
 		  	<% @item.reputations.each do |reputation| %>
@@ -78,9 +83,9 @@
 		  		<td>
 			  	<% (1..5).each do |cnt| %>
 			  		<% if cnt == reputation.rank %>
-			  		 <input name="star<%= reputation.user.id %>" type="radio" class="star" disabled="disabled" checked="checked">
+			  		 <input name="star<%= reputation.id %>" type="radio" class="star" disabled="disabled" checked="checked">
 			  		<% else %>
-			  		 <input name="star<%= reputation.user.id %>" type="radio" class="star" disabled="disabled"> 
+			  		 <input name="star<%= reputation.id %>" type="radio" class="star" disabled="disabled"> 
 			  		<%end%>
 			  	<%end%>
 				</td>

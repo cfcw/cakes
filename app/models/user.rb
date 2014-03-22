@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  
+  has_many :reputations
   
   attr_accessible :address, :email, :first_name, :gender, :image_url, :last_name, :passwd
   
