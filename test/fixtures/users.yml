@@ -5,7 +5,7 @@ one:
   last_name: 神本
   first_name: 侑季
   passwd: 123
-  email: a@.co.jp
+  email: yuki@c4cw.co.jp
   gender_id: 2
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/t1/c1.0.99.100/p100x100/1528631_550826905007625_391488968_a.jpg"
@@ -15,7 +15,7 @@ two:
   last_name: 大嶋
   first_name: 直子
   passwd: 123
-  email: a@.co.jp
+  email: naoko@@c4cw.co.jp
   gender_id: 2
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/t1/c8.8.95.96/p111x111/1146714_10201968591843210_1150148203_a.jpg"
@@ -25,7 +25,7 @@ three:
   last_name: 花井
   first_name: 亜由子
   passwd: 123
-  email: a@.co.jp
+  email: ayuko@c4cw.co.jp
   gender_id: 2
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/t1/c1.0.99.100/p100x100/1175303_549945895070785_984019390_a.jpg"
@@ -35,7 +35,7 @@ fuor:
   last_name: 天沼
   first_name: 千鶴
   passwd: 123
-  email: a@.co.jp
+  email: chizuru@c4cw.co.jp
   gender_id: 2
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/t1/c7.7.85.86/253789_228143023863511_8144883_s.jpg"
@@ -45,7 +45,7 @@ five:
   last_name: 佐藤
   first_name: 香織
   passwd: 123
-  email: a@.co.jp
+  email: kaori@c4cw.co.jp
   gender_id: 2
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/t1.0-1/c1.0.99.100/p100x100/1377186_10202564816348156_1349078972_a.jpg"
@@ -55,7 +55,7 @@ six:
   last_name: Ling
   first_name: Xu Ling
   passwd: 123
-  email: a@.co.jp
+  email: xu@c4cw.co.jp
   gender_id: 1
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/t1.0-1/c8.8.95.96/p111x111/10537_10151416414027191_544208549_a.jpg"
@@ -65,7 +65,7 @@ seven:
   last_name: 伊東
   first_name: 雄歩
   passwd: 123
-  email: a@.co.jp
+  email: yuho@c4cw.co.jp
   gender_id: 1
   address: 東京都
   image_url: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/t1/c8.7.94.95/p111x111/403286_256622294418198_1713860830_a.jpg"
