@@ -32,16 +32,17 @@ class MypageController < SessionController
                   image_url image_url
              from items I 
             where recommended_flg = 1"
-    unless keywords.item_name.empty?
+   
+    if keywords.item_name.present?
       sql = sql + " and item_name = :item_name "
     end
-    unless keywords.category_id.empty?
+    if keywords.category_id.present?
       sql = sql + " and category_id = :category_id "
     end
-    unless keywords.target_gender_id.empty?
+    if keywords.target_gender_id.present?
       sql = sql + " and target_gender_id = :target_gender_id "
     end
-    unless keywords.target_age_id.empty?
+    if keywords.target_age_id.present?
       sql = sql + " and target_age_id = :target_age_id "
     end
     sql =  sql +  " limit 4 "
@@ -58,16 +59,17 @@ class MypageController < SessionController
                   image_url image_url
              from items I 
             where 1 = 1 "
-    unless keywords.item_name.empty?
+
+    if keywords.item_name.present?
       sql = sql + " and item_name = :item_name "
     end
-    unless keywords.category_id.empty?
+    if keywords.category_id.present?
       sql = sql + " and category_id = :category_id "
     end
-    unless keywords.target_gender_id.empty?
+    if keywords.target_gender_id.present?
       sql = sql + " and target_gender_id = :target_gender_id "
     end
-    unless keywords.target_age_id.empty?
+    if keywords.target_age_id.present?
       sql = sql + " and target_age_id = :target_age_id "
     end
     sql = sql + " order by rank limit 4 "
@@ -84,16 +86,17 @@ class MypageController < SessionController
                   image_url image_url
              from items I 
             where near_by_flg > 1 "
-    unless keywords.item_name.empty?
+
+    if keywords.item_name.present?
       sql = sql + " and item_name = :item_name "
     end
-    unless keywords.category_id.empty?
+    if keywords.category_id.present?
       sql = sql + " and category_id = :category_id "
     end
-    unless keywords.target_gender_id.empty?
+    if keywords.target_gender_id.present?
       sql = sql + " and target_gender_id = :target_gender_id "
     end
-    unless keywords.target_age_id.empty?
+    if keywords.target_age_id.present?
       sql = sql + " and target_age_id = :target_age_id "
     end
     sql = sql + " order by near_by_flg limit 4 "
