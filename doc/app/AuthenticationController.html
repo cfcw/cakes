@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class AuthenticationController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/authentication_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-auth">#auth</a>
+    
+    <li><a href="#method-i-logout">#logout</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./AuthenticationController.html">AuthenticationController</a>
+  
+    <li><a href="./CategoriesController.html">CategoriesController</a>
+  
+    <li><a href="./CategoriesHelper.html">CategoriesHelper</a>
+  
+    <li><a href="./Category.html">Category</a>
+  
+    <li><a href="./Gender.html">Gender</a>
+  
+    <li><a href="./GendersController.html">GendersController</a>
+  
+    <li><a href="./GendersHelper.html">GendersHelper</a>
+  
+    <li><a href="./Group.html">Group</a>
+  
+    <li><a href="./GroupsController.html">GroupsController</a>
+  
+    <li><a href="./GroupsHelper.html">GroupsHelper</a>
+  
+    <li><a href="./GuideController.html">GuideController</a>
+  
+    <li><a href="./GuideHelper.html">GuideHelper</a>
+  
+    <li><a href="./HistoriesController.html">HistoriesController</a>
+  
+    <li><a href="./HistoriesHelper.html">HistoriesHelper</a>
+  
+    <li><a href="./History.html">History</a>
+  
+    <li><a href="./IndexController.html">IndexController</a>
+  
+    <li><a href="./IndexHelper.html">IndexHelper</a>
+  
+    <li><a href="./Item.html">Item</a>
+  
+    <li><a href="./ItemsController.html">ItemsController</a>
+  
+    <li><a href="./ItemsHelper.html">ItemsHelper</a>
+  
+    <li><a href="./LoginController.html">LoginController</a>
+  
+    <li><a href="./LoginHelper.html">LoginHelper</a>
+  
+    <li><a href="./MypageController.html">MypageController</a>
+  
+    <li><a href="./MypageHelper.html">MypageHelper</a>
+  
+    <li><a href="./Reputation.html">Reputation</a>
+  
+    <li><a href="./ReputationsController.html">ReputationsController</a>
+  
+    <li><a href="./ReputationsHelper.html">ReputationsHelper</a>
+  
+    <li><a href="./SearchKeyword.html">SearchKeyword</a>
+  
+    <li><a href="./SessionController.html">SessionController</a>
+  
+    <li><a href="./Shop.html">Shop</a>
+  
+    <li><a href="./ShopsController.html">ShopsController</a>
+  
+    <li><a href="./ShopsHelper.html">ShopsHelper</a>
+  
+    <li><a href="./TargetAge.html">TargetAge</a>
+  
+    <li><a href="./TargetAgesController.html">TargetAgesController</a>
+  
+    <li><a href="./TargetAgesHelper.html">TargetAgesHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class AuthenticationController</h1>
+
+  <div id="description" class="description">
+    
+<p>ログイン認証コントローラクラス</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-auth" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">auth</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>ログイン認証処理</p>
+
+<h4 id="method-i-auth-label-Parameters">Parameters</h4>
+<ul><li>
+<p>+<a href="http://:email">params</a>+ - ログインID</p>
+</li><li>
+<p>+<a href="http://:passwd">params</a>+ - パスワード</p>
+</li></ul>
+
+<h4 id="method-i-auth-label-Return">Return</h4>
+<ul><li>
+<p><code>redirect_to</code> - リダイレクト</p>
+</li></ul>
+
+<h4 id="method-i-auth-label-Examples">Examples</h4>
+          
+
+          
+          <div class="method-source-code" id="auth-source">
+            <pre><span class="ruby-comment"># File app/controllers/authentication_controller.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">auth</span>
+  <span class="ruby-identifier">user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">authenticate</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:email</span>], <span class="ruby-identifier">params</span>[<span class="ruby-value">:passwd</span>])
+        
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">user</span> <span class="ruby-keyword">then</span>
+    <span class="ruby-comment">#ログイン情報セッション登録</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:is_login</span>] = <span class="ruby-keyword">true</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:user_id</span>] = <span class="ruby-identifier">user</span>.<span class="ruby-identifier">id</span>
+    <span class="ruby-identifier">session</span>[<span class="ruby-value">:login_name</span>] = <span class="ruby-identifier">user</span>.<span class="ruby-identifier">login_name</span>
+
+    <span class="ruby-comment">#ログ取得</span>
+    <span class="ruby-identifier">history</span> = <span class="ruby-constant">History</span>.<span class="ruby-identifier">new</span>
+    <span class="ruby-identifier">history</span>.<span class="ruby-identifier">user_id</span> = <span class="ruby-identifier">session</span>[<span class="ruby-value">:user_id</span>]
+    <span class="ruby-identifier">history</span>.<span class="ruby-identifier">user_name</span> = <span class="ruby-identifier">session</span>[<span class="ruby-value">:login_name</span>]
+    <span class="ruby-identifier">history</span>.<span class="ruby-identifier">action</span> = <span class="ruby-string">&quot;ログイン&quot;</span>
+    <span class="ruby-identifier">history</span>.<span class="ruby-identifier">ip_address</span> = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">remote_ip</span>
+    <span class="ruby-identifier">history</span>.<span class="ruby-identifier">save</span>
+    
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">mypage_main_path</span>
+  <span class="ruby-keyword">else</span>      
+    <span class="ruby-identifier">reset_session</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:msg</span>] = <span class="ruby-string">&quot;ログインが不正です。&quot;</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">login_index_path</span>
+  <span class="ruby-keyword">end</span>
+  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- auth-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- auth-method -->
+
+    
+      <div id="method-i-logout" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">logout</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>ログアウト処理</p>
+
+<h4 id="method-i-logout-label-Parameters">Parameters</h4>
+
+<h4 id="method-i-logout-label-Return">Return</h4>
+<ul><li>
+<p><code>redirect_to</code> - リダイレクト</p>
+</li></ul>
+
+<h4 id="method-i-logout-label-Examples">Examples</h4>
+          
+
+          
+          <div class="method-source-code" id="logout-source">
+            <pre><span class="ruby-comment"># File app/controllers/authentication_controller.rb, line 52</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">logout</span>
+  <span class="ruby-comment">#ログ取得</span>
+  <span class="ruby-identifier">history</span> = <span class="ruby-constant">History</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">history</span>.<span class="ruby-identifier">user_id</span> = <span class="ruby-identifier">session</span>[<span class="ruby-value">:user_id</span>]
+  <span class="ruby-identifier">history</span>.<span class="ruby-identifier">user_name</span> = <span class="ruby-identifier">session</span>[<span class="ruby-value">:login_name</span>]
+  <span class="ruby-identifier">history</span>.<span class="ruby-identifier">action</span> = <span class="ruby-string">&quot;ログアウト&quot;</span>
+  <span class="ruby-identifier">history</span>.<span class="ruby-identifier">ip_address</span> = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">remote_ip</span>
+  <span class="ruby-identifier">history</span>.<span class="ruby-identifier">save</span>
+  
+  <span class="ruby-identifier">reset_session</span>
+  <span class="ruby-identifier">flash</span>[<span class="ruby-value">:msg</span>] = <span class="ruby-string">&quot;ログアウトしました。&quot;</span>
+  <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">login_index_path</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- logout-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- logout-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

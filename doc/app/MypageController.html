@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class MypageController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/mypage_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="SessionController.html">SessionController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-generate_near_by_sql">#generate_near_by_sql</a>
+    
+    <li><a href="#method-i-generate_ranking_sql">#generate_ranking_sql</a>
+    
+    <li><a href="#method-i-generate_recommended_sql">#generate_recommended_sql</a>
+    
+    <li><a href="#method-i-main">#main</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./AuthenticationController.html">AuthenticationController</a>
+  
+    <li><a href="./CategoriesController.html">CategoriesController</a>
+  
+    <li><a href="./CategoriesHelper.html">CategoriesHelper</a>
+  
+    <li><a href="./Category.html">Category</a>
+  
+    <li><a href="./Gender.html">Gender</a>
+  
+    <li><a href="./GendersController.html">GendersController</a>
+  
+    <li><a href="./GendersHelper.html">GendersHelper</a>
+  
+    <li><a href="./Group.html">Group</a>
+  
+    <li><a href="./GroupsController.html">GroupsController</a>
+  
+    <li><a href="./GroupsHelper.html">GroupsHelper</a>
+  
+    <li><a href="./GuideController.html">GuideController</a>
+  
+    <li><a href="./GuideHelper.html">GuideHelper</a>
+  
+    <li><a href="./HistoriesController.html">HistoriesController</a>
+  
+    <li><a href="./HistoriesHelper.html">HistoriesHelper</a>
+  
+    <li><a href="./History.html">History</a>
+  
+    <li><a href="./IndexController.html">IndexController</a>
+  
+    <li><a href="./IndexHelper.html">IndexHelper</a>
+  
+    <li><a href="./Item.html">Item</a>
+  
+    <li><a href="./ItemsController.html">ItemsController</a>
+  
+    <li><a href="./ItemsHelper.html">ItemsHelper</a>
+  
+    <li><a href="./LoginController.html">LoginController</a>
+  
+    <li><a href="./LoginHelper.html">LoginHelper</a>
+  
+    <li><a href="./MypageController.html">MypageController</a>
+  
+    <li><a href="./MypageHelper.html">MypageHelper</a>
+  
+    <li><a href="./Reputation.html">Reputation</a>
+  
+    <li><a href="./ReputationsController.html">ReputationsController</a>
+  
+    <li><a href="./ReputationsHelper.html">ReputationsHelper</a>
+  
+    <li><a href="./SearchKeyword.html">SearchKeyword</a>
+  
+    <li><a href="./SessionController.html">SessionController</a>
+  
+    <li><a href="./Shop.html">Shop</a>
+  
+    <li><a href="./ShopsController.html">ShopsController</a>
+  
+    <li><a href="./ShopsHelper.html">ShopsHelper</a>
+  
+    <li><a href="./TargetAge.html">TargetAge</a>
+  
+    <li><a href="./TargetAgesController.html">TargetAgesController</a>
+  
+    <li><a href="./TargetAgesHelper.html">TargetAgesHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class MypageController</h1>
+
+  <div id="description" class="description">
+    
+<p>MyPageコントローラクラス</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-generate_near_by_sql" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">generate_near_by_sql</span><span
+            class="method-args">(keywords)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>近所商品取得</p>
+
+<h4 id="method-i-generate_near_by_sql-label-Parameters">Parameters</h4>
+<ul><li>
+<p><code>keywords</code> - 検索条件</p>
+</li></ul>
+
+<h4 id="method-i-generate_near_by_sql-label-Return">Return</h4>
+<ul><li>
+<p><code>sql</code> - 近所商品取得SQL</p>
+</li></ul>
+
+<h4 id="method-i-generate_near_by_sql-label-Examples">Examples</h4>
+          
+
+          
+          <div class="method-source-code" id="generate_near_by_sql-source">
+            <pre><span class="ruby-comment"># File app/controllers/mypage_controller.rb, line 119</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">generate_near_by_sql</span>(<span class="ruby-identifier">keywords</span>)
+  <span class="ruby-identifier">sql</span> = <span class="ruby-string">&quot;select id item_id, 
+                item_name item_name,
+                near_by_flg near_by_flg, 
+                image_url image_url
+           from items I 
+          where near_by_flg &gt; 1 &quot;</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">item_name</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; and item_name = :item_name &quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">category_id</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; and category_id = :category_id &quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">target_gender_id</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; and target_gender_id = :target_gender_id &quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">target_age_id</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; and target_age_id = :target_age_id &quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; order by near_by_flg limit 4 &quot;</span>
+   <span class="ruby-keyword">return</span> <span class="ruby-identifier">sql</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- generate_near_by_sql-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- generate_near_by_sql-method -->
+
+    
+      <div id="method-i-generate_ranking_sql" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">generate_ranking_sql</span><span
+            class="method-args">(keywords)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>ランキング商品取得</p>
+
+<h4 id="method-i-generate_ranking_sql-label-Parameters">Parameters</h4>
+<ul><li>
+<p><code>keywords</code> - 検索条件</p>
+</li></ul>
+
+<h4 id="method-i-generate_ranking_sql-label-Return">Return</h4>
+<ul><li>
+<p><code>sql</code> - ランキング商品取得SQL</p>
+</li></ul>
+
+<h4 id="method-i-generate_ranking_sql-label-Examples">Examples</h4>
+          
+
+          
+          <div class="method-source-code" id="generate_ranking_sql-source">
+            <pre><span class="ruby-comment"># File app/controllers/mypage_controller.rb, line 87</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">generate_ranking_sql</span>(<span class="ruby-identifier">keywords</span>)
+  <span class="ruby-identifier">sql</span> = <span class="ruby-string">&quot;select id item_id, 
+                item_name item_name, 
+                rank rank,
+                image_url image_url
+           from items I 
+          where 1 = 1 &quot;</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">item_name</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; and item_name = :item_name &quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">category_id</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; and category_id = :category_id &quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">target_gender_id</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; and target_gender_id = :target_gender_id &quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">target_age_id</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; and target_age_id = :target_age_id &quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; order by rank limit 4 &quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sql</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- generate_ranking_sql-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- generate_ranking_sql-method -->
+
+    
+      <div id="method-i-generate_recommended_sql" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">generate_recommended_sql</span><span
+            class="method-args">(keywords)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>お勧め商品取得</p>
+
+<h4 id="method-i-generate_recommended_sql-label-Parameters">Parameters</h4>
+<ul><li>
+<p><code>keywords</code> - 検索条件</p>
+</li></ul>
+
+<h4 id="method-i-generate_recommended_sql-label-Return">Return</h4>
+<ul><li>
+<p><code>sql</code> - お勧め商品取得SQL</p>
+</li></ul>
+
+<h4 id="method-i-generate_recommended_sql-label-Examples">Examples</h4>
+          
+
+          
+          <div class="method-source-code" id="generate_recommended_sql-source">
+            <pre><span class="ruby-comment"># File app/controllers/mypage_controller.rb, line 56</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">generate_recommended_sql</span>(<span class="ruby-identifier">keywords</span>)
+  <span class="ruby-identifier">sql</span> = <span class="ruby-string">&quot;select id item_id, 
+                item_name item_name,
+                image_url image_url
+           from items I 
+          where recommended_flg = 1&quot;</span>
+ 
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">item_name</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; and item_name = :item_name &quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">category_id</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; and category_id = :category_id &quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">target_gender_id</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; and target_gender_id = :target_gender_id &quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">keywords</span>.<span class="ruby-identifier">target_age_id</span>.<span class="ruby-identifier">present?</span>
+    <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot; and target_age_id = :target_age_id &quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">sql</span> =  <span class="ruby-identifier">sql</span> <span class="ruby-operator">+</span>  <span class="ruby-string">&quot; limit 4 &quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sql</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- generate_recommended_sql-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- generate_recommended_sql-method -->
+
+    
+      <div id="method-i-main" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">main</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>MyPage表示処理</p>
+
+<h4 id="method-i-main-label-Parameters">Parameters</h4>
+<ul><li>
+<p>+<a href="http://:reputation">params</a>+ - 口コミ評価</p>
+</li><li>
+<p>+<a href="http://:rank">params</a>+ - ランク</p>
+</li><li>
+<p>+<a href="http://:tab_mode">params</a>+ -
+画面タブモード(&#39;basic&#39;/&#39;reputation&#39;/&#39;map&#39;)</p>
+</li></ul>
+
+<h4 id="method-i-main-label-Return">Return</h4>
+
+<h4 id="method-i-main-label-Examples">Examples</h4>
+          
+
+          
+          <div class="method-source-code" id="main-source">
+            <pre><span class="ruby-comment"># File app/controllers/mypage_controller.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">main</span>
+  <span class="ruby-comment">#パラメータ取得</span>
+  <span class="ruby-ivar">@keywords</span> = <span class="ruby-constant">SearchKeyword</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">params</span>)
+  
+  <span class="ruby-comment">#画面マスタ取得</span>
+  <span class="ruby-ivar">@categories</span> = <span class="ruby-constant">Category</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-ivar">@target_genders</span> = <span class="ruby-constant">Gender</span>.<span class="ruby-identifier">all</span>
+  <span class="ruby-ivar">@target_ages</span> = <span class="ruby-constant">TargetAge</span>.<span class="ruby-identifier">all</span>
+  
+  <span class="ruby-comment">#お勧め商品取得</span>
+  <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">generate_recommended_sql</span>(<span class="ruby-ivar">@keywords</span>)
+  <span class="ruby-ivar">@recommended_items</span> = <span class="ruby-constant">Item</span>.<span class="ruby-identifier">find_by_sql</span>([<span class="ruby-identifier">sql</span>, <span class="ruby-ivar">@keywords</span>.<span class="ruby-identifier">params</span>])
+  
+  <span class="ruby-comment">#ランキング商品取得</span>
+  <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">generate_ranking_sql</span>(<span class="ruby-ivar">@keywords</span>)
+  <span class="ruby-ivar">@ranking_items</span>  = <span class="ruby-constant">Item</span>.<span class="ruby-identifier">find_by_sql</span>([<span class="ruby-identifier">sql</span>, <span class="ruby-ivar">@keywords</span>.<span class="ruby-identifier">params</span>])
+  
+  <span class="ruby-comment">#近所商品取得</span>
+  <span class="ruby-identifier">sql</span> = <span class="ruby-identifier">generate_near_by_sql</span>(<span class="ruby-ivar">@keywords</span>)
+  <span class="ruby-ivar">@near_by_items</span>  = <span class="ruby-constant">Item</span>.<span class="ruby-identifier">find_by_sql</span>([<span class="ruby-identifier">sql</span>, <span class="ruby-ivar">@keywords</span>.<span class="ruby-identifier">params</span>])
+  
+  <span class="ruby-comment">#ログ取得</span>
+  <span class="ruby-identifier">history</span> = <span class="ruby-constant">History</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">history</span>.<span class="ruby-identifier">user_id</span> = <span class="ruby-identifier">session</span>[<span class="ruby-value">:user_id</span>]
+  <span class="ruby-identifier">history</span>.<span class="ruby-identifier">user_name</span> = <span class="ruby-identifier">session</span>[<span class="ruby-value">:login_name</span>]
+  <span class="ruby-identifier">history</span>.<span class="ruby-identifier">action</span> = <span class="ruby-string">&quot;MyPage&quot;</span>
+  <span class="ruby-identifier">history</span>.<span class="ruby-identifier">ip_address</span> = <span class="ruby-identifier">request</span>.<span class="ruby-identifier">remote_ip</span>
+  <span class="ruby-identifier">history</span>.<span class="ruby-identifier">save</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- main-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- main-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
