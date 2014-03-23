@@ -62,7 +62,7 @@ class MypageController < SessionController
             where recommended_flg = 1"
    
     if keywords.item_name.present?
-      sql = sql + " and item_name = :item_name "
+      sql = sql + " and item_name like :item_name "
     end
     if keywords.category_id.present?
       sql = sql + " and category_id = :category_id "
@@ -94,7 +94,7 @@ class MypageController < SessionController
             where 1 = 1 "
 
     if keywords.item_name.present?
-      sql = sql + " and item_name = :item_name "
+      sql = sql + " and item_name like :item_name "
     end
     if keywords.category_id.present?
       sql = sql + " and category_id = :category_id "
@@ -126,7 +126,7 @@ class MypageController < SessionController
             where near_by_flg > 1 "
 
     if keywords.item_name.present?
-      sql = sql + " and item_name = :item_name "
+      sql = sql + " and item_name like :item_name "
     end
     if keywords.category_id.present?
       sql = sql + " and category_id = :category_id "

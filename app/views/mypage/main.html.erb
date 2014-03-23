@@ -12,10 +12,8 @@
 		<!-- 検索フォーム -->
 		<div class="page-content col-lg-9" >
 			<%= form_tag({:action => "main"}, {:class => "well form-search"}) do %>
-				<input type="text" name="item_name" class="input-medium search-query">
-				<button type="submit" class="btn">
-					検 索
-				</button>
+				<%= text_field_tag :item_name, @keywords.item_name, :class => "input-medium search-query"%>
+				<%= submit_tag "検 索", :class => "btn" %>
 				<br>
 				<%= select_tag :category_id,
 							   content_tag(:option,'ケーキの種類',:value=>"")+

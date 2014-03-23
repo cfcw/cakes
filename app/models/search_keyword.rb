@@ -16,7 +16,7 @@ class SearchKeyword
   def params
       hash = {}
     unless self.item_name.nil?
-      hash.store(:item_name, self.item_name) 
+      hash.store(:item_name, '%' + self.item_name + '%') 
     end  
     unless self.category_id.nil?
       hash.store(:category_id, self.category_id) 
