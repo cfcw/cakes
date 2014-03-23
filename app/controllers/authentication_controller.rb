@@ -2,12 +2,20 @@
 # AuthenticationController
 # Author:: Hiroyuki, Tajima
 # Date:: 2014.03.15
+
+#ログイン認証コントローラクラス
 class AuthenticationController < ApplicationController
   skip_before_filter :check_login, :only => [:auth]
 
   #
   # ログイン認証処理
-  #
+  # ==== Parameters
+  # * +params[:email]+ - ログインID
+  # * +params[:passwd]+ - パスワード
+  # ==== Return
+  # * +redirect_to+ - リダイレクト
+  # ==== Examples
+  # 
   def auth
     user = User.authenticate(params[:email], params[:passwd])
           
@@ -36,7 +44,12 @@ class AuthenticationController < ApplicationController
 
   #
   # ログアウト処理
+  # ==== Parameters
   #
+  # ==== Return
+  # * +redirect_to+ - リダイレクト
+  # ==== Examples
+  # 
   def logout
     #ログ取得
     history = History.new

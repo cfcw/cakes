@@ -2,6 +2,8 @@
 # ItemsController
 # Author:: Hiroyuki, Tajima
 # Date:: 2014.03.22
+
+# 商品コントローラクラス
 class ItemsController < SessionController
   # GET /items
   # GET /items.json
@@ -14,8 +16,15 @@ class ItemsController < SessionController
     end
   end
 
-  # GET /items/1
-  # GET /items/1.json
+  #
+  # 商品詳細表示処理
+  # ==== Parameters
+  # * +params[:id]+ - 商品ID
+  # * +params[:tab_mode]+ - 画面タブモード('basic'/'reputation'/'map')
+  # ==== Return
+  # * +render+ - 画面レンダリング
+  # ==== Examples
+  # 
   def show
     @tab_mode = params[:tab_mode]
     #商品詳細取得
@@ -40,7 +49,14 @@ class ItemsController < SessionController
 
   #
   # 評価登録処理
-  #
+  # ==== Parameters
+  # * +params[:reputation]+ - 口コミ評価
+  # * +params[:rank]+ - ランク
+  # * +params[:tab_mode]+ - 画面タブモード('basic'/'reputation'/'map')
+  # ==== Return
+  # * +redirect_to+ - リダイレクト
+  # ==== Examples
+  # 
   def create
     tab_mode = params[:tab_mode]    
     @reputation = Reputation.new(params[:reputation])

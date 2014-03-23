@@ -2,10 +2,20 @@
 # MypageController
 # Author:: Hiroyuki, Tajima
 # Date:: 2014.03.22
+
+# MyPageコントローラクラス
 class MypageController < SessionController
+
   #
   # MyPage表示処理
-  #
+  # ==== Parameters
+  # * +params[:reputation]+ - 口コミ評価
+  # * +params[:rank]+ - ランク
+  # * +params[:tab_mode]+ - 画面タブモード('basic'/'reputation'/'map')
+  # ==== Return
+  # 
+  # ==== Examples
+  # 
   def main
     #パラメータ取得
     @keywords = SearchKeyword.new(params)
@@ -38,7 +48,12 @@ class MypageController < SessionController
   
   #
   # お勧め商品取得
-  #  
+  # ==== Parameters
+  # * +keywords+ - 検索条件
+  # ==== Return
+  # * +sql+ - お勧め商品取得SQL
+  # ==== Examples
+  # 
   def generate_recommended_sql(keywords)
     sql = "select id item_id, 
                   item_name item_name,
@@ -64,7 +79,12 @@ class MypageController < SessionController
 
   #
   # ランキング商品取得
-  #
+  # ==== Parameters
+  # * +keywords+ - 検索条件
+  # ==== Return
+  # * +sql+ - ランキング商品取得SQL
+  # ==== Examples
+  # 
   def generate_ranking_sql(keywords)
     sql = "select id item_id, 
                   item_name item_name, 
@@ -91,7 +111,12 @@ class MypageController < SessionController
 
   #
   # 近所商品取得
-  #
+  # ==== Parameters
+  # * +keywords+ - 検索条件
+  # ==== Return
+  # * +sql+ - 近所商品取得SQL
+  # ==== Examples
+  # 
   def generate_near_by_sql(keywords)
     sql = "select id item_id, 
                   item_name item_name,
