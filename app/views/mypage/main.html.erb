@@ -17,29 +17,20 @@
 					検 索
 				</button>
 				<br>
-				<select name="category_id" style="border-right:1px blacl solid;">
-					<option selected="selected" value="">ケーキの種類</option>
-					<option value="1">ショートケーキ</option>
-					<option value="2">チョコレートケーキ</option>
-					<option value="3">チーズケーキ</option>
-					<option value="4">タルト</option>
-					<option value="5">モンブラン</option>
-					<option value="6">オリジナル</option>
-				</select>
-				<select name="target_age_id" style="border-right:1px blacl solid;">
-					<option selected="selected" value="">対象年齢層</option>
-					<option value="1">~12さい</option>
-					<option value="2">13~20</option>
-					<option value="3">20~30</option>
-					<option value="4">30~40</option>
-					<option value="5">40~</option>
-				</select>
-				<select name="target_gender_id" style="border-right:1px blacl solid;">
-					<option selected="selected" value="">対象性別</option>
-					<option value="1">男</option>
-					<option value="2">女</option>
-					<option value="3">性別不詳</option>
-				</select>
+				<%= select_tag :category_id,
+							   content_tag(:option,'ケーキの種類',:value=>"")+
+							   options_from_collection_for_select(@categories, :id, :category_name, @keywords.category_id),
+							   :style => "border-right:1px blacl solid;"%>
+
+				<%= select_tag :target_age_id,
+							   content_tag(:option,'対象年齢層',:value=>"")+
+							   options_from_collection_for_select(@target_ages, :id, :target_age_range, @keywords.target_age_id),
+							   :style => "border-right:1px blacl solid;" %>
+				
+				<%= select_tag :target_gender_id,
+							   content_tag(:option,'対象性別',:value=>"")+
+							   options_from_collection_for_select(@target_genders, :id, :gender, @keywords.target_gender_id),
+							   :style => "border-right:1px blacl solid;" %>
 			<% end %>
 		</div>
 		<!-- /検索フォーム -->

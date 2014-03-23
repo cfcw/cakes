@@ -10,6 +10,11 @@ class MypageController < SessionController
     #パラメータ取得
     @keywords = SearchKeyword.new(params)
     
+    #画面マスタ取得
+    @categories = Category.all
+    @target_genders = Gender.all
+    @target_ages = TargetAge.all
+    
     #お勧め商品取得
     sql = generate_recommended_sql(@keywords)
     @recommended_items = Item.find_by_sql([sql, @keywords.params])
