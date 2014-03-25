@@ -28,7 +28,22 @@ class ItemsController < SessionController
   def show
     @tab_mode = params[:tab_mode]
     #商品詳細取得
-    @item = Item.find(params[:id])
+    sql = "select I.id, I.shop_id, I.item_name,
+                  I.category_id, I.target_gender_id, 
+                  I.target_age_id, I.image_url, 
+                  I.comment1, I.comment2, I.price,
+                  I.memo1, I.memo2, I.recommended_flg, I.near_by_flg,
+                  ifnull(R.rank,0) rank
+             from items I
+             left join (select shop_id, item_id, ROUND(AVG(rank)) rank
+                          from reputations
+                          group by shop_id, item_id ) R
+               on I.shop_id = R.shop_id
+              and I.id = R.item_id
+            where I.id = :item_id "
+ 
+    @item = Item.find_by_sql([sql, :item_id => params[:id]]).first
+    #@item = Item.find(params[:id])
     @reputation = Reputation.new
     @reputation.shop_id = @item.shop_id
     @reputation.item_id = @item.id
